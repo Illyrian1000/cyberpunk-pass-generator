@@ -1,0 +1,48 @@
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+/******** Chrome, Safari, Opera and Edge Chromium styles ********/
+/* slider track */
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: #00bfff;
+  height: 3px;
+  margin-top: 6.5px;
+}
+
+/* slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  background-color: #fbff00;
+  height: 16px;
+  width: 16px;
+  margin-top: -6px;
+}
+
+/*********** Firefox styles ***********/
+/* slider track */
+input[type="range"]::-moz-range-track {
+  background-color: #00bfff;
+  height: 3px;
+  margin-top: 6.5px;
+}
+
+/* slider thumb */
+input[type="range"]::-moz-range-thumb {
+  background-color: #fbff00;
+  height: 16px;
+  width: 16px;
+  margin-top: -6px;
+}
+
+.password-length {
+  color: white;
+  width: 16px;
+  font-size: 12px;
+}

@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+:root {
+  --aureolin: #f8ef00;
+  --bright-aqua: #00f0ff;
+  --cool-red: #ff003c;
+  --alabaster: #fafafa;
+  --neutral: #bbbbbb;
+
+  --tomorrow: "Tomorrow", sans-serif;
+  --barlow: "Barlow", sans-serif;
+
+  --heading-size: 40px;
+  --heading-weight: bold;
+  --heading-spacing: 5px;
+  --heading-height: 40px;
+
+  --subheading-size: 20px;
+  --subheading-weight: 500;
+  --subheading-spacing: 20%;
+  --subheading-height: 24px;
+
+  --base-size: 16px;
+  --base-weight: 400;
+  --base-spacing: 20%;
+  --base-height: 24px;
+
+  --button-size: 16px;
+  --button-weight: 600;
+  --button-spacing: 3px;
+  --button-height: 24px;
+
+  --caption-size: 12px;
+  --caption-weight: 400;
+  --caption-spacing: 20%;
+  --caption-height: 16px;
+
+  --chip-size: 8px;
+  --chip-weight: 400;
+  --chip-spacing: 20%;
+  --chip-height: 8px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* fonts: tomorrow and barlow */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--tomorrow);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-header {
+  color: var(--aureolin);
+  font-size: var(--heading-size);
+  font-weight: var(--heading-weight);
+  letter-spacing: var(--heading-spacing);
+  line-height: var(--heading-height);
+  margin: 80px 0 50px 10vw;
+}
+
+.main-cont {
+  margin-left: 10vw;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 300px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.left-cont {
 }

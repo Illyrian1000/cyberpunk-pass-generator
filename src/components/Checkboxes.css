@@ -1,0 +1,33 @@
+.checkbox-cont {
+  color: white;
+  font-size: var(--base-size);
+  font-weight: var(--base-weight);
+  line-height: var(--base-height);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 500px;
+}
+
+.checkbox-cont div {
+  width: calc(50% - 15px);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox-cont [type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--aureolin);
+  cursor: pointer;
+}
+
+.checkbox-cont input[type="checkbox"]:checked {
+  background-color: var(--aureolin);
+}
+
+.checkbox-cont label {
+  cursor: pointer;
+}

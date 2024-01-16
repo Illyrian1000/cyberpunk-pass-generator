@@ -1,0 +1,56 @@
+/* --button-size: 16px;
+--button-weight: 400;
+--button-spacing: 20%;
+--button-height: 24px; */
+
+.copy-button {
+  position: relative;
+  background-color: var(--aureolin);
+  display: flex;
+  width: 350px;
+  justify-content: space-between;
+  border-right: 3px solid var(--cool-red);
+  box-sizing: border-box;
+  overflow: hidden;
+
+  clip-path: polygon(
+    0 0,
+    0 0,
+    0 0,
+    100% 0,
+    100% 100%,
+    100% 100%,
+    100% 100%,
+    5% 100%,
+    0% 70%
+  );
+
+  padding: 20px 40px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.copy-button p {
+  font-size: var(--button-size);
+  letter-spacing: var(--button-spacing);
+  font-weight: var(--button-weight);
+  line-height: var(--button-height);
+}
+
+.sub-div {
+  background-color: black;
+  color: var(--aureolin);
+  border-left: 3px solid var(--cool-red);
+  font-size: 8px;
+  height: fit-content;
+  padding: 0 12px 0 5px;
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+
+.copy-button:active {
+  scale: 0.99;
+}
